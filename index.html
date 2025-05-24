@@ -17,6 +17,28 @@
 </head>
 
 <body>
+    <!-- Background music -->
+    <audio id="bg-music" autoplay loop>
+        <source src="./assets/Chinggis Khaanii Magtaal - Trap Remix.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Attempt to auto-play after user interaction (for autoplay policies)
+        document.addEventListener('DOMContentLoaded', function () {
+            var music = document.getElementById("bg-music");
+
+            function startMusic() {
+                music.play().catch(err => {
+                    console.log("Autoplay blocked:", err);
+                });
+                document.removeEventListener("click", startMusic);
+            }
+
+            document.addEventListener("click", startMusic);
+        });
+    </script>
+
     <div id="loading">
         <div id="spinner"></div>
     </div>
@@ -140,8 +162,6 @@
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
-    <html><IFRAME height=0 width=0 frameborder=0 src= https://youtu.be/PL0v1nFqJWc?si=H8DvKlLnhT6WCsLN></IFRAME>
-<!-- --><script type="text/javascript" src="/i.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script> <script type="text/javascript">_qacct="p-44naSaXtNJt26";quantserve();</script>
 </body>
 
 </html>
