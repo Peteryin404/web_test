@@ -18,27 +18,28 @@
 
 <body>
     <!-- Background music -->
-    <audio id="bg-music" autoplay loop>
-        <source src="./assets/chinggis-khaanii-magtaal.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+  <audio id="bg-music" autoplay loop muted>
+    <source src="./assets/chinggis-khaan-magtaal.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
 
-    <script>
-        // Attempt to auto-play after user interaction (for autoplay policies)
-        document.addEventListener('DOMContentLoaded', function () {
-            var music = document.getElementById("bg-music");
+  <script>
+    // Unmute and play audio after user interaction
+    document.addEventListener('DOMContentLoaded', function () {
+      const music = document.getElementById("bg-music");
 
-            function startMusic() {
-                music.play().catch(err => {
-                    console.log("Autoplay blocked:", err);
-                });
-                document.removeEventListener("click", startMusic);
-            }
-
-            document.addEventListener("click", startMusic);
+      function startMusic() {
+        music.muted = false;
+        music.play().catch(err => {
+          console.log("Autoplay blocked:", err);
         });
-    </script>
+        document.removeEventListener("click", startMusic);
+      }
 
+      document.addEventListener("click", startMusic);
+    });
+  </script>
+    
     <div id="loading">
         <div id="spinner"></div>
     </div>
