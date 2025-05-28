@@ -113,4 +113,14 @@ https://roboticenergyllc.com
 
 Vincent Garreau  - vincentgarreau.com
 
+Gesthis Khan photo and descriptions: https://www.britannica.com/biography/Genghis-Khan
+
+Soldier image: https://new-generations.fandom.com/wiki/The_Nomads_of_the_North
+
+Map photo: https://stock.adobe.com
+
+The pdf about food culture: https://peteryin404.github.io/web_test/assets/foodways.pdf
+
+The Mongolian portraits: https://www.toursmongolia.com/mongolia_travel_news/9-must-see-masterpieces-of-mongolian-paintings
+
 
