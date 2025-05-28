@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    max-width: 300px; /* Adjust size as needed */
+    opacity: 0.9; /* Optional: makes it slightly transparent */
+    animation: fadeIn 2s ease-in-out; /* Optional: fade-in animation */
+}
+
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
