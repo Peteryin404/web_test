@@ -1,23 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+/* Gallery container */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
+/* Individual gallery item */
+.gallery-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid #ddd;
   padding: 15px;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Image styling */
+.gallery-item img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Description styling */
+.gallery-desc {
+  flex: 1;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.gallery-desc h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #f8f8f8;
+}
+
+.gallery-desc p {
+  line-height: 1.6;
 }
 
 body {
